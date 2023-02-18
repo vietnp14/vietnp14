@@ -23,8 +23,9 @@
 
   - **What I Do:**
     - Develop and maintain the Web Application that allows users to create and configure a Bot with data from Zendesk and other Customer Support platforms.
-    - Implement Dashboard Analytics that supports users analyze bot data accurately.
     - Increase code coverage assurance up to 80% by adding more Integration & Unit tests.
+    - Lead and support other team member to do side projects.
+    - Being a menter to support other team member growth.
     - Work closely with other teams and people (Design, Backend, PM) for developing new features.
 
   - **Refs:**
