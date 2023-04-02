@@ -1,5 +1,3 @@
-![Louis Viet's GitHub stats](https://github-readme-stats.vercel.app/api?username=vietnp14&show_icons=true&theme=codeSTACKr)<br/>
-
 ## **👋 &nbsp; Hi there**
 👏 &nbsp; Hello, I am Louis (Viet). I'm currently a fulltime staff as Frontend Engineer at **[GICRM, LLC](https://www.linkedin.com/company/gicrmai)** (Developed by **Got It**).
 
