@@ -1,7 +1,7 @@
 ## **👋 &nbsp; Hi there**
 👏 &nbsp; Hello, I am Louis (Viet). I'm currently a fulltime staff as Frontend Engineer at **[GICRM, LLC](https://www.linkedin.com/company/gicrmai)** (Developed by **Got It**).
 
-💻 &nbsp; I am a 3-year experienced developer passionate about building software products, a self-motivated learner and unafraid to get hands-on.
+💻 &nbsp; I am a 3-year experienced developer passionating about building software products, a self-motivated learner and unafraid to get hands-on.
 
 🙇🏻‍♂️ &nbsp; Being worked at Product companies helped me to adapt to the changes quickly and made me a mature team worker. I am able to work well both in a team environment as well as using my own initiative.<br/><br/>
 
