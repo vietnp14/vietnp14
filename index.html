@@ -6,19 +6,31 @@
     <title>Document</title>
   </head>
   <body>
-    <button id="button">Share</button>
+    <button id="button-share">Share</button>
+    <button id="button-copy">Copy</button>
     <script>
-      const handleClick = () => {
+      const handleShare = () => {
         navigator
           .share({
             text: "Copied text",
           })
           .catch((err) => {
-            console.log("Error : ", { err });
+            console.log("Share error : ", { err });
           });
       };
 
-      document.getElementById("button").onclick = handleClick;
+      const handleCopy = () => {
+        navigator
+          .share({
+            text: "Copied text",
+          })
+          .catch((err) => {
+            console.log("Copy error : ", { err });
+          });
+      };
+
+      document.getElementById("button-share").onclick = handleShare;
+      document.getElementById("button-copy").onclick = handleCopy;
     </script>
   </body>
 </html>
