@@ -10,25 +10,13 @@
     <button id="button-copy">Copy</button>
     <script>
       const handleShare = () => {
-        // console.log('window share : ', window.share);
-        // alert(window.share);
-        // if (window.share) {
-        //   window.share({
-        //     text: "Copied text",
-        //   });
-        // } else {
-        //   navigator
-        //     .share({
-        //       text: "Copied text",
-        //     })
-        //     .catch((err) => {
-        //       console.log("Share error : ", { err });
-        //     });
-        // }
-        window.postMessage({text: 'From copied text'});
-        window.addEventListener('message', (event) => {
-          console.log('Event : ', event);
-        });
+        const data = {
+          key: 'CDG_SHARE_TRIP_LINK',
+          data: {
+            text: 'trip_link',
+          }
+        }
+        window.postMessage(data);
       };
 
       const handleCopy = () => {
