@@ -20,13 +20,7 @@
       };
 
       const handleCopy = () => {
-        navigator
-          .share({
-            text: "Copied text",
-          })
-          .catch((err) => {
-            console.log("Copy error : ", { err });
-          });
+        navigator.clipboard.writeText('Copied text');
       };
 
       document.getElementById("button-share").onclick = handleShare;
