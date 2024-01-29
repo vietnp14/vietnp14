@@ -10,17 +10,25 @@
     <button id="button-copy">Copy</button>
     <script>
       const handleShare = () => {
-        navigator
-          .share({
+        console.log('window share : ', window.share);
+        alert(window.share);
+        if (window.share) {
+          window.share({
             text: "Copied text",
-          })
-          .catch((err) => {
-            console.log("Share error : ", { err });
           });
+        } else {
+          navigator
+            .share({
+              text: "Copied text",
+            })
+            .catch((err) => {
+              console.log("Share error : ", { err });
+            });
+        }
       };
 
       const handleCopy = () => {
-        navigator.clipboard.writeText('Copied text');
+        navigator.clipboard.writeText("Copied text");
       };
 
       document.getElementById("button-share").onclick = handleShare;
