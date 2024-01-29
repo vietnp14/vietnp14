@@ -8,6 +8,7 @@
   <body>
     <button id="button-share">Share</button>
     <button id="button-copy">Copy</button>
+    <button id="button-call">Call</button>
     <script>
       const handleShare = () => {
         const data = {
@@ -23,8 +24,13 @@
         navigator.clipboard.writeText("Copied text");
       };
 
+      const handleCall = () => {
+        window.open(encodeURI('tel:84775530555'), '_self');
+      };
+
       document.getElementById("button-share").onclick = handleShare;
       document.getElementById("button-copy").onclick = handleCopy;
+      document.getElementById("button-call").onclick = handleCall;
     </script>
   </body>
 </html>
