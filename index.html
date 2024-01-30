@@ -34,8 +34,9 @@
       document.getElementById("button-call").onclick = handleCall;
 
       window.addEventListener('message', (event) => {
-        if (event.key === 'CDG_SHARE_TRIP_LINK_RESULT') {
-          const isSuccess = event.data.success;
+        const data = event.data;
+        if (data.key === 'CDG_SHARE_TRIP_LINK_RESULT') {
+          const isSuccess = data.data.success;
 
           if (!isSuccess) {
             navigator.clipboard.writeText("Copied text");
