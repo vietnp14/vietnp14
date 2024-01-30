@@ -11,13 +11,13 @@
     <button id="button-call">Call</button>
     <script>
       const handleShare = () => {
-        const data = {
-          key: 'CDG_SHARE_TRIP_LINK',
+        const event = {
+          type: 'CDG_SHARE_TRIP_LINK',
           data: {
             text: 'trip_link',
           }
-        }
-        window.postMessage(data);
+        };
+        window.postMessage(event);
       };
 
       const handleCopy = () => {
@@ -31,6 +31,17 @@
       document.getElementById("button-share").onclick = handleShare;
       document.getElementById("button-copy").onclick = handleCopy;
       document.getElementById("button-call").onclick = handleCall;
+
+      window.addEventListener('message', (event) => {
+        if (event.key === 'CDG_SHARE_TRIP_LINK_RESULT') {
+          const isSuccess = event.data.success;
+
+          if (!isSuccess) {
+            navigator.clipboard.writeText("Copied text");
+            alert('Copied successfully');
+          }
+        }
+      })
     </script>
   </body>
 </html>
